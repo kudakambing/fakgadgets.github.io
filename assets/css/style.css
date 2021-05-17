@@ -487,13 +487,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 
-@media handheld, only screen and (max-width: 1024px) {
+@media handheld, only screen and (max-width: 767px) {
   #intro {
     background-attachment: fixed;
-  }
-  @viewport{
-    zoom: 1.0;
-    width: extend-to-zoom;
   }
 }
 
