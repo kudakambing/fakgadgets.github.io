@@ -479,8 +479,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   /*width: auto;
   max-width: 100%;
   height: auto;*/
-  background: url(../img/intro-bg.jpg) center center cover no-repeat fixed;
+  background: url(../img/intro-bg.jpg);
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
   overflow: hidden;
   position: relative;
 }
