@@ -476,9 +476,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: auto;
   height: 100vh;
-  /*width: auto;
-  max-width: 100%;
-  height: auto;*/
   background: url(../img/intro-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -487,7 +484,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 1074px) {
   #intro {
     background-attachment: fixed;
   }
