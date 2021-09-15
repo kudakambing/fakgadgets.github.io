@@ -28,6 +28,58 @@ button {
 button:hover {
   background-color: #800808;
 }
+  
+========================
+      BUTTON TWO
+========================
+*/
+.btn-two {
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;	
+}
+.btn-two span {
+	z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+.btn-two::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.1);
+}
+.btn-two::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.1);
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
+}
+
+
+/* 
 </style>
 </head>
 <body>
@@ -35,6 +87,11 @@ button:hover {
 <iframe src="https://giphy.com/embed/S92INgeECCc0VkaJ5h" width="980" height="570" class="giphy-embed" allowFullScreen></iframe>
   
 <h1></h1>
+  <div class="box-2">
+  <div class="btn btn-two" onclick="location.href='kudakambing.github.io'">
+    <span>HOVER ME</span>
+  </div>
+</div>
 <button onclick="location.href='kudakambing.github.io'">Rumah</button>
 
 </body>
